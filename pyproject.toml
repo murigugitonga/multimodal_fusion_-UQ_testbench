@@ -1,0 +1,17 @@
+[project]
+name = "multimodal-fusion-uq-testbench"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.4.3",
+    "streamlit>=1.55.0",
+]
+
+[project.scripts]
+fusion-app = "streamlit run src/app.py"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
