@@ -12,6 +12,4 @@ dependencies = [
 [project.scripts]
 fusion-app = "streamlit run src/app.py"
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+

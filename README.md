@@ -8,3 +8,17 @@ This is a modular python framework for simulating **Late Fusion** and **Kalman F
 - **Recursive kalman Filtering:** Provides 1D state estimation that balances physics-based prediction with sensor-based correction.
 - **Innovation-based UQ:** Detects adversarial spoofing by monitoring the **residual**. If a measurement falls outside the statistical confidence interval ( e.g 3rd-order Sigma), the gate automatically rejects the input to maintain system integrity.
 - **MOSA Compliant Design:** The fusion engine is agnostic to the sensor source, enabling plug-and-play capability for different modalities.
+
+## Installation and Execution
+
+Clone the Project
+
+```bash
+git clone https://github.com/murigugitonga/fusion-testbench.git
+
+cd fusion-testbench
+
+uv add requirements.text
+uv lock
+
+```

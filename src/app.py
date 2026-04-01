@@ -34,7 +34,7 @@ for i in range(100):
         "Step": i,
         "True": true_pos,
         "Measured": z,
-        "Fused Estimate": estimate
+        "Fused Estimate": estimate,
         "Spoof Flag": 1 if flagged else 0,
         "NIS Score": nis
     })
@@ -47,4 +47,4 @@ st.line_chart(df.set_index("Step")[["True","Measured","Fused Estimate"]])
 
 st.subheader("Anomaly Detection(UQ Logic)")
 st.bar_chart(df.set_index("Step")["Spoof Flag"])
-st.caption("A, '1' indicates the system detected a statistical anomaly and rejected the sensor data.")
+st.caption("A '1' indicates the system detected a statistical anomaly and rejected the sensor data.")
