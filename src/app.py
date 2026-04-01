@@ -11,7 +11,7 @@ st.sidebar.header("Attack Vector")
 spoofing_active = st.sidebar.toggle("Activate Sensor Spoofing", value=False)
 sensitivity = st.sidebar.slider("UQ Gate Sensitivity", 1.0, 10.0, 3.0)
 
-# Init Filter
+# Initialize Filter
 kf = UQKalmanFilter(q=0.1, r=1.0)
 kf.threshold = sensitivity
 
