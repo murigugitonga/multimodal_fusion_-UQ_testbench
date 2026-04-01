@@ -1,6 +1,6 @@
 # Resilient Multimodal Fusion & UQ Testbench
 
-This is a modular python framework for simulating **Late Fusion** and **Kalman Filter-based state estimation** in contested environments. It incorporates an **Uncertainty Quantification** to detect and reject spoofed sensor data in a simulated Mobile Ad-hoc Network node..
+This is a modular python framework for simulating **Late Fusion** and **Kalman Filter-based state estimation** in contested environments. It incorporates an **Uncertainty Quantification** to detect and reject spoofed sensor data in a simulated Mobile Ad-hoc Network node.
 
 ## Key Features
 
@@ -11,7 +11,7 @@ This is a modular python framework for simulating **Late Fusion** and **Kalman F
 
 ## Installation and Execution
 
-Clone the Project
+Clone the project and install the requirements
 
 ```bash
 git clone https://github.com/murigugitonga/fusion-testbench.git
@@ -20,5 +20,7 @@ cd fusion-testbench
 
 uv add requirements.text
 uv lock
+
+uv run streamlit run src/app.py
 
 ```
