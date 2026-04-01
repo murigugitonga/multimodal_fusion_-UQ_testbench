@@ -19,7 +19,7 @@ class UQKalmanFilter:
 
         nis = (y**2)/ S
         is_spoofed = nis > self.threshold
-        # Uncertainity Quantification: Check if is a 'statistical outlier'
+        # Uncertainity Quantification: Check if statistical outlier
         # Check nis( Normalized Innovation Squared)
         if not is_spoofed:
             # Standard Kalman update
